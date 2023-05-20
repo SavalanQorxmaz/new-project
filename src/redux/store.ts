@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import themeSliceReducer from './themeSlice';
+import themeReducer from './themeSlice';
 import screenReducer from './screenSlice'
 
 
 export const store = configureStore({
     reducer: {
-        theme: themeSliceReducer,
+        theme: themeReducer,
         screen:screenReducer
     }
 })

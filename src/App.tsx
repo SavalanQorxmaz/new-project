@@ -1,7 +1,9 @@
 
+import {Routes, Route} from 'react-router-dom'
 import Header from "./components/Header";
 import { setScreen } from "./redux/screenSlice";
 import { useDispatch } from 'react-redux'
+import Home from './Home';
 
 
 
@@ -17,12 +19,12 @@ function App() {
 
 
   return (
-    <div className="App">
-      <Header />
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+ <>
+  <Header />
+ <Routes>
+<Route path ='/'    element={<Home/>}/>
+ </Routes>
+ </>
   );
 }
 

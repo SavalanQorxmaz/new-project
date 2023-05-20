@@ -14,11 +14,6 @@ module.exports = {
       xl: { min: '1201px' }
 
     },
-    container: {
-      // padding: '[0.2 rem]'
-    }
-  
-
     
   },
   corePlugins: {
@@ -30,21 +25,20 @@ module.exports = {
       addComponents({
         '.container': {
           margin: 'auto',
-          maxWidth: '80%',
           '@screen xs': {
-            maxWidth: '98%',
+            maxWidth: '100%',
           },
           '@screen sm': {
-            maxWidth: '94%',
+            maxWidth: '576px',
           },
           '@screen md': {
-            maxWidth: '90%',
+            maxWidth: '768px',
           },
           '@screen lg': {
-            maxWidth: '85%',
+            maxWidth: '992px',
           },
           '@screen xl': {
-            maxWidth: '80%',
+            maxWidth: '1200px',
           },
         }
       })

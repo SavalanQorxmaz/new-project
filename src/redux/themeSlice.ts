@@ -20,6 +20,11 @@ if(myProjectLocalStorage !== null){
     myObject = JSON.parse(myProjectLocalStorage)
 
 }
+else {
+    myObject.theme = 'light'
+    
+    localStorage.setItem('my-project', JSON.stringify(myObject))
+}
 
 const initialState = {
     mode: myObject.theme
