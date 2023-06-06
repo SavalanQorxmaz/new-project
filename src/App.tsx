@@ -3,7 +3,8 @@ import {Routes, Route} from 'react-router-dom'
 import Header from "./components/Header";
 import { setScreen } from "./redux/screenSlice";
 import { useDispatch } from 'react-redux'
-import Home from './Home';
+import Home from './pages/Home';
+import Sudoku from './pages/Sudoku';
 
 
 
@@ -23,6 +24,7 @@ function App() {
   <Header />
  <Routes>
 <Route path ='/'    element={<Home/>}/>
+<Route path ='/sudoku'    element={<Sudoku/>}/>
  </Routes>
  </>
   );
